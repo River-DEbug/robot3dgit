@@ -1,0 +1,25 @@
+{
+    "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+    "productName": "AGV Robot Control",
+    "version": "1.0.0",
+    "identifier": "com.agv.robotcontrol",
+    "build": {
+        "beforeDevCommand": "",
+        "beforeBuildCommand": "",
+        "devUrl": "http://localhost:3005",
+        "frontendDist": "../dist"
+    },
+    "app": {
+        "windows": [{
+            "title": "AGV Sorter Robot Control System",
+            "width": 1280,
+            "height": 800,
+            "resizable": true,
+            "fullscreen": false,
+            "url": "http://localhost:3005/en/robot/3d-demo"
+        }],
+        "security": {
+            "csp": null
+        }
+    }
+}
